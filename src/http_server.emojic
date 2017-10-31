@@ -1,0 +1,123 @@
+📦 sockets 🔴
+
+🐇 ❗ 🍇
+
+    🍰 status 🔡
+    🍰 type 🔡
+    🍰 headers 🍯🐚🔡
+    🍰 body 🔡
+    
+    🐈🆕 🍼status🔡 🍼type🔡 🍼headers🍯🐚🔡 🍼body🔡 🍇🍉
+
+    🐖🔡➡🔡 🍇
+        🍦 lines 🔷🍨🐚🔡🐸
+        🐻 lines 🍪🔤HTTP/1.1 🔤 status🍪
+        🐻 lines 🔤Connection: close🔤
+        🐻 lines 🍪🔤Content-Type: 🔤 type🍪
+
+        🔂 header_name 🍡🐙headers 🍇
+            🐻 lines 🍪header_name 🔤: 🔤 🍺🐽headers header_name🍪
+        🍉
+
+        🐻 lines 🍪🔤Content-Length: 🔤 🔡📐body 10🍪
+        🐻 lines 🔤🔤
+        🐻 lines body
+
+        🍮 output 🔤🔤
+        🔂 line 🍡lines 🍇
+            🍮 output 🍪 output line 🔤❌r❌n🔤 🍪
+        🍉
+
+        🍮 output 🔪output 0 ➖📐output 2
+
+        🍎output
+    🍉
+🍉
+
+🐇 ❓ 🍇
+    🍰 method 🔡
+    🍰 path 🔡
+    🍰 body 🔡
+    🍰 headers 🍯🐚🔡
+
+    🐈🆕 🍼method🔡 🍼path🔡 🍼headers🍯🐚🔡 🍼body🔡 🍇🍉
+
+    🐖🚦➡🔡🍇 🍎method 🍉
+    🐖🛣➡🔡🍇 🍎path 🍉
+    🐖🤕➡🍯🐚🔡🍇 🍎headers 🍉
+    🐖🕺➡🔡🍇 🍎body 🍉
+🍉
+
+🐇 📚 🍇
+    🍰 host 🔡
+    🍰 port 🚂
+
+    🐈🆕 🍼host🔡 🍼port🚂 🍇🍉
+
+    🐖👓 callback🍇❓➡️🔡🍉 🍇
+        🍦 server 🚇🔷🏄🆕 port
+
+        🔁👍🍇
+
+            🍦 socket 🍺 🙋 server
+            🔷💈🆕 🍇
+
+                🍮 header 🔤🔤
+                🍮 method 🔤🔤
+                🍮 path 🔤🔤
+                🍮 headers 🔷🍯🐚🔡🐸
+                🍮 content_body 🔤🔤
+                🍮 finished_header 👎
+                🔁 😛 finished_header 👎 🍇
+                    🍊🍦 data 👂 socket 1 🍇
+                        🍊🍦 data_str 🔡data 🍇
+                            🍮 header 🍪 header data_str 🍪
+                        🍉
+                    🍉
+                    🍮 finished_header ⛳header 🔤❌r❌n❌r❌n🔤
+                🍉
+
+                🍊❎☁🔍header 🔤Content-Length:🔤 🍇
+                    🍮 length 1
+                    🍮 content_length 0
+                    🍮 found_length 👎
+                    🍦 start_position 🍺🔍header 🔤Content-Length: 🔤
+                    🔁 😛 found_length 👎 🍇
+                        🍊 ⛳🔪header ➕16 start_position length 🔤❌r🔤 🍇
+                            🍮 found_length 👍
+                            🍮 content_length 🍺🚂 🔪header ➕16 start_position ➖length 1 10
+                        🍉🍓🍇
+                            🍮 length ➕length 1
+                        🍉
+                    🍉
+                    🍮 content_body 🍺🔡🍺👂 socket content_length
+                🍉
+
+                🍦 lines 🔫🔧header 🔤❌r❌n🔤
+                🍦 line_one_raw 🍺🐽lines 0
+                🍦 line_one 🔫line_one_raw 🔤 🔤
+                🍮 method 🍺🐽line_one 0
+                🍮 path 🍺🐽line_one 1
+
+                🐨lines 0
+
+                🔂 line 🍡lines 🍇
+                    🍦 header_list 🔫line 🔤:🔤
+                    🍦 header_name 🍺🐽header_list 0
+                    🐨header_list 0
+                    🍮 header_content 🔤🔤
+                    🔂 part 🍡header_list 🍇 
+                        🍮 header_content 🍪 header_content 🔤:🔤 part 🍪
+                    🍉
+                    🍮 header_content 🔪header_content 2 📐header_content
+                    🐷headers header_name header_content
+                🍉
+
+                🍦 answer 🍭 callback 🔷❓🆕 method path headers content_body
+
+                💬 socket 📇answer
+            🍉
+
+        🍉
+    🍉
+🍉

@@ -1,0 +1,28 @@
+📦 files 🔴
+👴 Load HTTP server
+📜 🔤http_server.emojic🔤
+
+🏁🍇
+    🍦 server 🔷📚🆕 🔤localhost🔤 8080
+
+    👓 server 🍇 request❓ ➡ 🔡
+        👴 Default to a 404
+        🍮 response 🔷❗🆕 🔤404 Not Found🔤 🔤text/html🔤 🔷🍯🐚🔡🐸 🔤🔤
+
+
+        🍊 😛🛣request 🔤/🔤 🍇
+            🍦 headers 🔷🍯🐚🔡🐸
+            🐷headers 🔤Location🔤 🔤/index.html🔤
+            🍮 response 🔷❗🆕 🔤303 See Other🔤 🔤text/html🔤 headers 🔤🔤
+        🍉🍓🍇
+            👴 Try to read the requested file.
+            🥑 fileData 🍩📇📄 🍪🔤public🔤 🛣request🍪 🍇
+                🍮 response 🔷❗🆕 🔤200 OK🔤 🔤text/html🔤 🔷🍯🐚🔡🐸 🍺🔡fileData
+            🍉🍓 error 🍇
+                😀 🔤😢 Could not read file🔤
+            🍉
+        🍉
+
+        🍎🔡response
+    🍉
+🍉
