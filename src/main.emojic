@@ -1,28 +1,49 @@
 📦 files 🔴
-👴 Load HTTP server
+👴 Load the server and router
 📜 🔤http_server.emojic🔤
+📜 🔤router.emojic🔤
 
 🏁🍇
     🍦 server 🔷📚🆕 🔤localhost🔤 8080
+    
+    👴 create a router
+    🍦 router 🔷🐒🆕
 
-    👓 server 🍇 request❓ ➡ 🔡
-        👴 Default to a 404
-        🍮 response 🔷❗🆕 🔤404 Not Found🔤 🔤text/html🔤 🔷🍯🐚🔡🐸 🔤🔤
-
-
-        🍊 😛🛣request 🔤/🔤 🍇
-            🍦 headers 🔷🍯🐚🔡🐸
-            🐷headers 🔤Location🔤 🔤/index.html🔤
-            🍮 response 🔷❗🆕 🔤303 See Other🔤 🔤text/html🔤 headers 🔤🔤
-        🍉🍓🍇
-            👴 Try to read the requested file.
-            🥑 fileData 🍩📇📄 🍪🔤public🔤 🛣request🍪 🍇
-                🍮 response 🔷❗🆕 🔤200 OK🔤 🔤text/html🔤 🔷🍯🐚🔡🐸 🍺🔡fileData
-            🍉🍓 error 🍇
-                😀 🔤😢 Could not read file🔤
-            🍉
+    👴 add some routes
+    🌲router 🔷🍌🆕
+        🔤GET🔤
+        🔤/test/{}/more/{}🔤 
+        🍇 request❓ args🍨🐚🔡 ➡ ❗
+            🍎🔷❗🆕 
+                    🔤200 OK🔤 
+                    🔤text/html🔤 
+                    🔷🍯🐚🔡🐸 
+                    🍪🔤<p>more tests</p>🔤 🍺🐽args 0 🔤 🔤 🍺🐽args 1🍪
         🍉
 
-        🍎🔡response
+    🌲router 🔷🍌🆕
+        🔤GET🔤
+        🔤/test/{}🔤 
+        🍇 request❓ args🍨🐚🔡 ➡ ❗
+            🍎🔷❗🆕 
+                🔤200 OK🔤 
+                🔤text/html🔤 
+                🔷🍯🐚🔡🐸 
+                🍪🔤<p>test</p>🔤 🍺🐽args 0🍪
+        🍉
+
+    🌲router 🔷🍌🆕
+        🔤GET🔤
+        🔤/test🔤 
+        🍇 request❓ args🍨🐚🔡 ➡ ❗
+            🍎🔷❗🆕 
+                🔤200 OK🔤 
+                🔤text/html🔤 
+                🔷🍯🐚🔡🐸 
+                🔤<p>Main</p>🔤
+        🍉
+
+    👓 server 🍇 request❓ ➡ 🔡
+        🍎🔡🙊router request
     🍉
 🍉

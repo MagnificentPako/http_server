@@ -1,0 +1,64 @@
+🐇 🍌 🍇
+
+    🍰 method🔡
+    🍰 route🔡
+    🍰 callback🍇 ❓ 🍨🐚🔡 ➡ ❗🍉
+
+    🐈🆕 🍼method🔡 🍼route🔡 🍼callback🍇 ❓ 🍨🐚🔡 ➡ ❗🍉 🍇🍉
+
+    🐖🚦➡🔡🍇 🍎method 🍉
+    🐖🛣➡🔡🍇 🍎route 🍉
+    🐖🔈➡🍇 ❓ 🍨🐚🔡 ➡ ❗🍉 🍇 🍎callback 🍉
+
+🍉
+
+🐇 🐒 🍇
+
+    🍰 routes 🍨🐚🍌
+
+    🐈🆕🍇
+        🍮 routes 🔷🍨🐚🍌🐸
+    🍉
+
+    🐖🌲 route🍌 🍇
+        🐻 routes route
+    🍉
+
+    🐖🙊 request❓ ➡ ❗ 🍇
+
+        🍮 actual_req 🛣request
+        🍊😛🔪actual_req -1 -1 🔤/🔤 🍇  
+            🍮🔪actual_req 0 -1
+        🍉
+
+        🍮 routes_with_method 🐭routes 🍇route🍌➡👌
+            🍎😛 🚦route 🚦request
+        🍉
+
+        🍮 args 🔷🍨🐚🔡🐸
+
+        🍮 perfect_routes 🐭routes_with_method 🍇route🍌➡👌
+            🍦 split_route 🔫🛣route 🔤/🔤
+            🍦 split_req 🔫actual_req 🔤/🔤
+            🍊❎😛 🐔split_route 🐔split_req 🍇
+                🍎👎
+            🍉
+            🔂 i ⏩ 0 🐔split_route 🍇
+                🍊❎🎉 😛🍺🐽split_route i 🍺🐽split_req i
+                      😛🍺🐽split_route i 🔤{}🔤 🍇
+                    🍎👎
+                🍉🍋 😛🍺🐽split_route i 🔤{}🔤 🍇
+                    🐻 args 🍺🐽split_req i
+                🍉
+            🍉
+            🍎👍
+        🍉
+
+        🍊❎😛🐔perfect_routes 0 🍇
+            🍎 🍭🔈🍺🐽perfect_routes 0 request args
+        🍉🍓🍇
+            🍎 🔷❗🆕 🔤404 Not Found🔤 🔤text/html🔤 🔷🍯🐚🔡🐸 🔤🔤
+        🍉
+    🍉
+
+🍉
